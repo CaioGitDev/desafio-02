@@ -20,3 +20,21 @@
     - Quantidade total de refeições fora da dieta
     - Melhor sequência por dia de refeições dentro da dieta
 - O usuário só pode visualizar, editar e apagar as refeições o qual ele criou
+
+### Tablelas da aplicação
+--users
+id uuid PK
+name string
+email string
+created_at timestamp
+updated_at? timestamp
+
+--diet_meals
+id uuid PK
+id_user FK
+name string
+description string
+date datetime
+is_diet_meal boolean
+created_at timestamp
+updated_at? timestamp
